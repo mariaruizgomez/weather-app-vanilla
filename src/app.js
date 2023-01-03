@@ -41,9 +41,19 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+function search(city) {
+  let apiKey = "8161b4309ee03faae957729ba7104797";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
+}
 
-let apiKey = "8161b4309ee03faae957729ba7104797";
-let city = "Las Vegas";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#search-city");
+  search(cityInput.value);
+}
 
-axios.get(apiUrl).then(showTemperature);
+search("Las Vegas");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
