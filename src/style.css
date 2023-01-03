@@ -31,7 +31,7 @@ li {
   margin: 30px auto;
 }
 #temperature {
-  font-size: 60px;
+  font-size: 50px;
   color: rgb(33, 33, 33);
   font-weight: 400;
   line-height: 64px;
@@ -39,14 +39,14 @@ li {
 }
 .units {
   position: relative;
-  top: -30px;
+  top: -25px;
   line-height: 20px;
 }
 .overall {
   margin-bottom: 20px;
 }
 .d-flex weather-temperature {
-  margin-right: 20px;
+  margin-right: 5px;
   width: 65px;
   height: 65px;
 }
