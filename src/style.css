@@ -25,3 +25,28 @@ li {
   font-weight: 100;
   line-height: 20px;
 }
+
+.wrapping {
+  max-width: 600px;
+  margin: 30px auto;
+}
+#temperature {
+  font-size: 60px;
+  color: rgb(33, 33, 33);
+  font-weight: 400;
+  line-height: 64px;
+  margin-left: 15px;
+}
+.units {
+  position: relative;
+  top: -22px;
+  line-height: 20px;
+}
+.overall {
+  margin-bottom: 20px;
+}
+.d-flex weather-temperature {
+  margin-right: 20px;
+  width: 65px;
+  height: 65px;
+}
