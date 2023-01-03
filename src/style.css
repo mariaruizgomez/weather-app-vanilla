@@ -3,6 +3,7 @@ h1 {
   font-size: 40px;
   font-weight: 100;
   line-height: 70px;
+  margin-bottom: 0;
 }
 ul {
   margin: 0;
@@ -21,7 +22,7 @@ li {
 
 .wrapping {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 10px auto;
 }
 .application {
   max-width: 600px;
@@ -30,11 +31,9 @@ li {
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
-
 .overall {
   margin-bottom: 20px;
 }
-
 #temperature {
   font-size: 54px;
   color: rgb(33, 33, 33);
@@ -42,13 +41,11 @@ li {
   line-height: 54px;
   margin-left: 15px;
 }
-
 .weather-temperature img {
-  margin-right: 10px;
+  margin-right: 5px;
   height: 64px;
   width: 64px;
 }
-
 .weather-temperature .units {
   margin-right: 5px;
   height: 65px;
