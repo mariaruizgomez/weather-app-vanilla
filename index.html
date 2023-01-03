@@ -28,7 +28,6 @@
     <div class="container">
       <div class="wrapping">
         <div class="application">
-          <div   
           <form id="search-form" class="mb-4">
             <div class="row">
               <div class="col-9">
@@ -59,10 +58,13 @@
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature">
-                <img src="" width="60px" class="float-left" id="icon" />
+                <img src="" class="float-left" id="icon" />
                 <div>
                   <strong id="temperature"></strong
-                  ><span class="units"><a href="#" id="celsius">°C</a> | <a href="#" id="fahrenheit">°F</a></span>
+                  ><span class="units"
+                    ><a href="#" id="celsius" class="active">°C</a> |
+                    <a href="#" id="fahrenheit" class="inactive">°F</a></span
+                  >
                 </div>
               </div>
             </div>
@@ -73,17 +75,17 @@
               </ul>
             </div>
           </div>
-        
+        </div>
+        <small>
+          <a
+            href="https://github.com/mariaruizgomez/weather-app-vanilla"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Maria Ruiz
+        </small>
       </div>
-      <small>
-        <a
-          href="https://github.com/mariaruizgomez/weather-app-vanilla"
-          target="_blank"
-          >Open-source code</a
-        >
-        by Maria Ruiz</small
-      >
-      <script src="src/app.js"></script>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
