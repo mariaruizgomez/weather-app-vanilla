@@ -26,7 +26,8 @@ li {
 }
 .application {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 35px auto;
+  margin-bottom: 5px;
   padding: 30px;
   border: 1px solid #dadde1;
   border-radius: 5px;
@@ -39,12 +40,11 @@ li {
   color: rgb(33, 33, 33);
   font-weight: 400;
   line-height: 54px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .weather-temperature img {
-  margin-right: 5px;
   height: 64px;
-  width: 64px;
+  width: 60px;
 }
 .weather-temperature .units {
   margin-right: 5px;
@@ -61,4 +61,7 @@ a:link {
 .weather-temperature .active:hover {
   cursor: default;
   text-decoration: none;
+}
+.col-6 {
+  float: left;
 }
