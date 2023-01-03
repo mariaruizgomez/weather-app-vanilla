@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -28,10 +29,12 @@
       <div class="wrapping">
         <div class="application">
           <div class="overall">
-            <h1>Las Vegas</h1>
+            <h1 id="city"></h1>
             <ul>
-              <li>Tuesday 20:00</li>
-              <li>Sunny</li>
+              <li>
+                Tuesday 20:00
+            </li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -44,16 +47,17 @@
                   class="float-left"
                 />
                 <div>
-                  <strong id="temperature">42</strong
+                  <strong id="temperature"></strong
                   ><span class="units">°C | <a href="#">°F</a></span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 13%</li>
-                <li>Wind: 5 km/h</li>
+                <li>
+                    Humidity: <span id="humidity"></span>%</li>
+                <li>
+                     Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>
