@@ -3,9 +3,25 @@
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #dadde1;
+  border-radius: 5px;
 }
 
 h1 {
   font-family: "Lobster", cursive;
-  font-size: 20px;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 50px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  color: rgb(135, 135, 135);
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 20px;
 }
