@@ -74,3 +74,7 @@ a:link {
 .forecast-day {
   font-size: 16px;
 }
+
+.min-temperature {
+  color: #a3a4a7;
+}
