@@ -65,3 +65,12 @@ a:link {
 .col-6 {
   float: left;
 }
+
+.forecast {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0;
+}
+.forecast-day {
+  font-size: 16px;
+}
