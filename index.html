@@ -28,37 +28,33 @@
     <div class="container">
       <div class="wrapping">
         <div class="application">
-          <form id="search-form" class="mb-3">
-            <div class="row">
-              <div class="col-9">
-                <input
-                  type="search"
-                  placeholder="Enter a city"
-                  class="form-control"
-                  id="search-city"
-                />
-              </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  class="btn btn-primary w-60"
-                  value="search"
-                  id="button-search"
-                />
-              </div>
-            </div>
-          </form>
           <div class="overall">
+            <form id="search-form" class="mb-3">
+              <div class="row">
+                <div class="col-8">
+                  <input
+                    type="search"
+                    placeholder="Enter a city"
+                    class="form-control"
+                    id="search-city"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-60"
+                    value="search"
+                    id="button-search"
+                  />
+                </div>
+              </div>
+            </form>
             <h1 id="city"></h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description"></li>
-            </ul>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-7">
               <div class="d-flex weather-temperature">
-                <img src="" class="float-left" id="icon" />
+                <img src="" id="icon" />
                 <div>
                   <strong id="temperature"></strong
                   ><span class="units"
@@ -68,30 +64,37 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-5">
+              <ul>
+                <li id="date"></li>
+                <li id="description"></li>
+              </ul>
+            
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
-            </div>
-            <div class="weather-forecast" id="forecast">
-              <div class="row">
-                <div class="col-2">
-                  <div class="forecast-day">Mon</div>
-                  <img
-                    src="http://openweathermap.org/img/wn/01n@2x.png"
-                    width="40px"
-                    alt="sunny"
-                  />
-                  <div class="forecast-temperatures">
-                    <span class="max-temperature">18°</span>
-                    <span class="min-temperature">1°</span>
-                  </div>
+            
+          </div>
+
+          <div class="weather-forecast" id="forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="forecast-day">Mon</div>
+                <img
+                  src="http://openweathermap.org/img/wn/01n@2x.png"
+                  width="40px"
+                  alt="sunny"
+                />
+                <div class="forecast-temperatures">
+                  <span class="max-temperature">18°</span>
+                  <span class="min-temperature">1°</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>

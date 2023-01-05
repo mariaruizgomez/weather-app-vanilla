@@ -1,11 +1,13 @@
 h1 {
   font-family: "Lobster", cursive;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 100;
   line-height: 70px;
   margin-bottom: 0;
+  width: 300px;
 }
 ul {
+  float: left;
   margin: 0;
   padding: 0;
 }
@@ -26,9 +28,9 @@ li {
 }
 .application {
   max-width: 600px;
-  margin: 35px auto;
+  margin: 15px auto;
   margin-bottom: 5px;
-  padding: 30px;
+  padding: 25px;
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
@@ -36,21 +38,22 @@ li {
   margin-bottom: 20px;
 }
 #temperature {
-  font-size: 54px;
+  font-size: 64px;
   color: rgb(33, 33, 33);
   font-weight: 400;
   line-height: 54px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
-.weather-temperature img {
-  height: 64px;
-  width: 60px;
+.weather-temperature .img {
+  height: 90px;
+  float: left;
+  margin-left: -5px;
 }
 .weather-temperature .units {
-  margin-right: 5px;
+  margin-left: 1px;
   height: 65px;
   position: relative;
-  top: -25px;
+  top: -35px;
 }
 a:link {
   text-decoration: none;
@@ -77,4 +80,8 @@ a:link {
 
 .min-temperature {
   color: #a3a4a7;
+}
+#button-search {
+  background-color: #ec6e4c;
+  border: 1px solid #ec6e4c;
 }
