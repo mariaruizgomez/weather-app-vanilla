@@ -1,3 +1,9 @@
+body {
+  background-image: url("https://images.pexels.com/photos/673927/pexels-photo-673927.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
 h1 {
   font-family: "Lobster", cursive;
   font-size: 55px;
@@ -14,7 +20,7 @@ ul {
 }
 li {
   list-style: none;
-  color: rgb(135, 135, 135);
+  color: white;
   margin: 0;
   padding: 0;
   font-size: 17px;
@@ -76,12 +82,17 @@ a:link {
   font-size: 16px;
 }
 
+.max-temperature {
+  color: black;
+  font-weight: 300;
+}
+
 .min-temperature {
-  color: #a3a4a7;
+  color: white;
 }
 #button-search {
-  background-color: #ec6e4c;
-  border: 1px solid #ec6e4c;
+  background-color: #ccc9cd;
+  border: 1px solid #ccc9cd;
 }
 #search-form {
   float: right;
