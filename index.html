@@ -30,32 +30,39 @@
       <div class="wrapping">
         <div class="application">
           <div class="overall">
-            <form id="search-form" class="mb-3">
-              <div class="row">
-                <div class="col-8">
-                  <input
-                    type="search"
-                    placeholder="Enter a city"
-                    class="form-control"
-                    id="search-city"
-                  />
-                </div>
-                <div class="col-3">
-                  <input
-                    type="submit"
-                    class="btn btn-primary w-60"
-                    value="search"
-                    id="button-search"
-                  />
-                </div>
+            <div class="row">
+              <div class="col-6">
+                <h1 id="city"></h1>
               </div>
-            </form>
-            <h1 id="city"></h1>
+              <div class="col-6">
+                <form id="search-form" class="mb-3">
+                  <div class="row">
+                    <div class="col-8">
+                      <input
+                        type="search"
+                        placeholder="Enter a city"
+                        class="form-control"
+                        id="search-city"
+                      />
+                    </div>
+                    <div class="col-4">
+                      <input
+                        type="submit"
+                        class="btn btn-primary w-60"
+                        value="search"
+                        id="button-search"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
+
           <div class="row">
-            <div class="col-7">
+            <div class="col-8">
               <div class="d-flex weather-temperature">
-                <img class="main-icon" id="icon" src="" alt="" width="100px" />
+                <img class="main-icon" id="icon" src="" alt="" width="130px" />
                 <div>
                   <strong id="temperature"></strong
                   ><span class="units"
@@ -65,13 +72,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-5">
+            <div class="col-4">
               <ul>
                 <li id="date"></li>
+                <hr />
                 <li id="description"></li>
-              </ul>
-
-              <ul>
                 <li>Humidity: <span id="humidity"></span> %</li>
                 <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
@@ -83,7 +88,7 @@
                   <div class="forecast-day">Mon</div>
                   <img
                     src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-                    width="40px"
+                    width="50px"
                     alt="sunny"
                   />
                   <div class="forecast-temperatures">

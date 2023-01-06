@@ -1,13 +1,14 @@
 h1 {
   font-family: "Lobster", cursive;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 100;
-  line-height: 70px;
+  line-height: 35px;
   margin-bottom: 0;
   width: 300px;
+
+  position: relative;
 }
 ul {
-  float: left;
   margin: 0;
   padding: 0;
 }
@@ -38,19 +39,16 @@ li {
   margin-bottom: 20px;
 }
 #temperature {
-  font-size: 64px;
+  font-size: 84px;
   color: rgb(33, 33, 33);
   font-weight: 400;
-  line-height: 54px;
-  margin-left: 5px;
 }
 .weather-temperature .img {
-  height: 90px;
   float: left;
-  margin-left: -5px;
+  position: relative;
 }
 .weather-temperature .units {
-  margin-left: 1px;
+  margin-right: 0;
   height: 65px;
   position: relative;
   top: -35px;
@@ -84,4 +82,12 @@ a:link {
 #button-search {
   background-color: #ec6e4c;
   border: 1px solid #ec6e4c;
+}
+#search-form {
+  float: right;
+  right: 0;
+  position: relative;
+}
+#date {
+  font-weight: 600;
 }
