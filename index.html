@@ -22,6 +22,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Weather App</title>
   </head>
   <body>
@@ -54,7 +55,7 @@
           <div class="row">
             <div class="col-7">
               <div class="d-flex weather-temperature">
-                <img src="" id="icon" />
+                <img class="main-icon" id="icon" src="" alt="" width="100px" />
                 <div>
                   <strong id="temperature"></strong
                   ><span class="units"
@@ -71,23 +72,23 @@
               </ul>
 
               <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span>km/h</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
 
             <div class="weather-forecast" id="forecast">
               <div class="row">
                 <div class="col-2">
-                  <div class="forecast-day"></div>
+                  <div class="forecast-day">Mon</div>
                   <img
-                    src="http://openweathermap.org/img/wn/01n@2x.png"
+                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
                     width="40px"
                     alt="sunny"
                   />
                   <div class="forecast-temperatures">
-                    <span class="max-temperature"></span>
-                    <span class="min-temperature"></span>
+                    <span class="max-temperature">11</span>
+                    <span class="min-temperature">4</span>
                   </div>
                 </div>
               </div>
