@@ -56,7 +56,6 @@ li {
 }
 .weather-temperature .units {
   margin-right: 0;
-  height: 65px;
   position: relative;
   top: -35px;
 }
@@ -96,9 +95,8 @@ a:link {
   border: 1px solid #ccc9cd;
 }
 #search-form {
-  float: right;
+  float: left;
   right: 0;
-  position: relative;
 }
 #date {
   font-weight: 600;
