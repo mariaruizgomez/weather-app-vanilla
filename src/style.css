@@ -52,10 +52,10 @@ li {
 }
 .weather-temperature .img {
   float: left;
-  position: relative;
 }
 .weather-temperature .units {
-  margin-right: 0;
+  margin: 0;
+  padding: 0;
   position: relative;
   top: -35px;
 }
@@ -95,8 +95,8 @@ a:link {
   border: 1px solid #ccc9cd;
 }
 #search-form {
-  float: left;
-  right: 0;
+  margin: 0;
+  padding: 0;
 }
 #date {
   font-weight: 600;
