@@ -40,7 +40,7 @@
                     <div class="col-8">
                       <input
                         type="search"
-                        placeholder="Enter a city"
+                        placeholder="City"
                         class="form-control"
                         id="search-city"
                       />
@@ -49,7 +49,7 @@
                       <input
                         type="submit"
                         class="btn btn-primary w-60"
-                        value="search"
+                        value="🔎"
                         id="button-search"
                       />
                     </div>
@@ -58,42 +58,47 @@
               </div>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-8">
-              <div class="d-flex weather-temperature">
-                <img class="main-icon" id="icon" src="" alt="" width="130px" />
-                <div>
-                  <strong id="temperature"></strong
-                  ><span class="units"
-                    ><a href="#" id="celsius" class="active">°C</a> |
-                    <a href="#" id="fahrenheit">°F</a></span
-                  >
-                </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-1" class="weather-temperature">
+                <img
+                  class="main-icon"
+                  class="img-fluid"
+                  id="icon"
+                  src=""
+                  alt=""
+                />
               </div>
-            </div>
-            <div class="col-4">
-              <ul>
-                <li id="date"></li>
-                <hr />
-                <li id="description"></li>
-                <li>Humidity: <span id="humidity"></span> %</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
-            </div>
+              <div class="col-5">
+                <strong id="temperature"></strong
+                ><span class="units"
+                  ><a href="#" id="celsius" class="active">°C</a> |
+                  <a href="#" id="fahrenheit">°F</a></span
+                >
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li id="date"></li>
+                  <hr />
+                  <li id="description"></li>
+                  <li>Humidity: <span id="humidity"></span> %</li>
+                  <li>Wind: <span id="wind"></span> km/h</li>
+                </ul>
+              </div>
 
-            <div class="weather-forecast" id="forecast">
-              <div class="row">
-                <div class="col-2">
-                  <div class="forecast-day">Mon</div>
-                  <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-                    width="50px"
-                    alt="sunny"
-                  />
-                  <div class="forecast-temperatures">
-                    <span class="max-temperature">11</span>|
-                    <span class="min-temperature">4</span>
+              <div class="weather-forecast" id="forecast">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="forecast-day">Mon</div>
+                    <img
+                      src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                      width="50px"
+                      alt="sunny"
+                    />
+                    <div class="forecast-temperatures">
+                      <span class="max-temperature">11</span>|
+                      <span class="min-temperature">4</span>
+                    </div>
                   </div>
                 </div>
               </div>
